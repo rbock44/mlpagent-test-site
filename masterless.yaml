@@ -6,11 +6,8 @@ ehieraconfig: hiera/ehiera.yaml
 environment:
   test:
     modules:
-      - Path: forge-modules
-        URL: ssh://git@github.com/rbock44/puppet-forge-modules
-        Branch: master
-      - Path: my-modules
-        URL: ssh://git@github.com/rbock44/puppet-my-modules
+      - Path: modules/test-modules
+        URL: ssh://git@github.com/rbock44/mlpagent-test-modules
         Branch: master
     manifest: site.pp
     logdest: console
